@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: $tertiary;
+    @include respond-to(md) {
+        font-size: rem(15);
+    }
+    @include respond-to(sm) {
+        font-size: rem(14);
+    }
+    @include respond-to(xs) {
+        font-size: rem(13);
+    }
+}
+
+h2 {
+    font-size: rem(50);
+    color: $primary;
+    margin-bottom: 0;
+    @include respond-to(md) {
+        font-size: rem(40);
+    }
+    @include respond-to(sm) {
+        font-size: rem(32);
+    }
+    @include respond-to(xs) {
+        font-size: rem(24);
+        margin-bottom: 0;
+    }
+}
+
+h3 {
+    font-size: rem(36);
+    color: $primary;
+    @include respond-to(md) {
+        font-size: rem(28);
+    }
+    @include respond-to(sm) {
+        font-size: rem(24);
+    }
+    @include respond-to(xs) {
+        font-size: rem(20);
+    }
+}
+
+h4 {
+    font-size: rem(22);
+    color: $primary;
+    @include respond-to(md) {
+        font-size: rem(20);
+    }
+    @include respond-to(sm) {
+        font-size: rem(18);
+    }
+    @include respond-to(xs) {
+        font-size: rem(16);
+    }
+}

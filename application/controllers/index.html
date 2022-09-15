@@ -1,0 +1,55 @@
+1) Create Client Name in Zoho Developer Console
+
+Sign into Zoho. Next, go to the Zoho Developer Console and create a new client. Select ‘Server-Based Applications’ and fill out the rest of the fields:
+
+-Client Type: Served-Based Applications
+-Client Name: sgwptest (add any name you would like)
+-Homepage URL: yourdomain.com/
+-Authorized Redirect URI: https://yourdomain.com/
+
+Before proceeding to making your authorization request, make sure that you have the Postman API client downloaded and open. Zoho provides a short-timed grant code that expires after a minute so super important to have Postman ready to go.
+
+2) Send Authorization Request
+Next, we need to send an authorization request to Zoho Accounts. During this step, we want to pass the 'scope' of what we we will grant this Client to access. Since we want the client to be able to subscribe users, update users, edit users, and delete users in Zoho Campaigns, we include the scope ZohoCampaigns.contact.ALL.
+
+Using your client ID, client secret, and redirect URI, send an authorization request in your web browser to Zoho Campaigns.
+
+Here is sample url below that you can replace with your values:
+https://accounts.zoho.com/oauth/v2/au...
+scope=ZohoCampaigns.contact.ALL&redirect_uri=https://sgwebpartners.com/&access_typ...
+
+Approve your request and Copy the grant code in your web browser.
+
+3) Get Access Token and Refresh Token
+
+Open up Postman and enter in the following URL (edit your parameters for code, client ID, client secret, and redirect uri. Here is example:
+
+https://accounts.zoho.com/oauth/v2/to...
+
+You will be provided your access token, refresh token, etc.
+
+4) Use Access Token to make your first POST request
+
+https://campaigns.zoho.com/api/v1.1/j...[listkey]&contactinfo=%7BFirst+Name%3Aandrew%2CLast+Name%3Amiller%2CContact+Email%3Atest9%40sgwebpartners.com%7D
+
+5) Test with sample POST request to subscribe someone to mailing list
+Params:
+resfmt: JSON
+listkey: 58c3908e47768243dbc9a9dbcf4d1bb07461b395c6e88487
+contactinfo: %7BFirst+Name%3Aandrew%2CLast+Name%3Amiller%2CContact+Email%3Atest9%40sgwebpartners.com%7D
+
+Headers:
+-Authorization: Zoho-oauthtoken {insert code}
+-Content-Type: application/x-www-form-urlencoded
+
+I would recommend using a test email of yours. If successful, you will see a message like this:
+
+{
+"code": "0",
+"message": "A confirmation email is sent to the user. User needs to confirm to successfully subscribe.",
+"version": "1.1",
+"uri": "/api/v1.1/json/listsubscribe",
+"status": "success"
+}
+
+#ZohoAPI

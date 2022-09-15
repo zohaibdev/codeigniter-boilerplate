@@ -1,0 +1,9 @@
+	<?php
+		script(array(
+			'assets/vendors/js/jquery-3.6.0.min',
+			'assets/vendors/js/bootstrap.min',
+			'assets/js/main'
+		));
+	?>
+</body>
+</html>

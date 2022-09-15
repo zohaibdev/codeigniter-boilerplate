@@ -1,0 +1,1 @@
+CREATE TABLE `database`.`quote` (`id` INT(50) NOT NULL AUTO_INCREMENT , `name` VARCHAR(250) NOT NULL , `email` VARCHAR(250) NOT NULL , `phone` VARCHAR(250) NOT NULL , `message` LONGTEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

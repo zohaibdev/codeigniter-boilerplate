@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: calc($x / 16)rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #353535;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #004187;
+}
+
+a:visited {
+  color: #353535;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  body {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+h2 {
+  font-size: calc($x / 16)rem;
+  color: #353535;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  h2 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h2 {
+    font-size: calc($x / 16)rem;
+    margin-bottom: 0;
+  }
+}
+
+h3 {
+  font-size: calc($x / 16)rem;
+  color: #353535;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  h3 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h3 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+h4 {
+  font-size: calc($x / 16)rem;
+  color: #353535;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  h4 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h4 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h4 {
+    font-size: calc($x / 16)rem;
+  }
+}
+
+.st-pt {
+  padding-top: calc($x / 16)rem;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .st-pt {
+    padding-top: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .st-pt {
+    padding-top: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .st-pt {
+    padding-top: calc($x / 16)rem;
+  }
+}
+
+.st-pb {
+  padding-bottom: calc($x / 16)rem;
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .st-pb {
+    padding-bottom: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .st-pb {
+    padding-bottom: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .st-pb {
+    padding-bottom: calc($x / 16)rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .hide-lg-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hide-xs {
+    display: none;
+  }
+}
+
+.title-block {
+  margin-bottom: 20px;
+}
+
+.title-block h2 {
+  margin: 0;
+}
+
+.title-block h4 {
+  text-transform: uppercase;
+  color: red;
+  letter-spacing: 4px;
+  position: relative;
+  padding-left: 36px;
+  background-image: url(../../images/title-shape.svg);
+  background-repeat: no-repeat;
+  background-position: 0 53%;
+  background-size: 20px;
+  line-height: 1;
+  margin: 0 0 15px;
+  display: inline-table;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .title-block {
+    margin-bottom: 15px;
+  }
+}
+
+button, .th-btn {
+  padding: 15px 30px;
+  color: #fff;
+  background: #004187;
+  border: 1px solid #004187;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button:hover, .th-btn:hover {
+  background-color: #353535;
+  border-color: #353535;
+  color: #fff;
+}
+
+button:visited, .th-btn:visited {
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  button, .th-btn {
+    padding: 12px 24px;
+  }
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  border: 1px solid #6F7070;
+  border-radius: 8px;
+  padding: 15px 15px;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000;
+}
+
+input[type="date"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #000;
+}
+
+input[type="date"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+input[type="number"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder,
+input[type="search"]::-ms-input-placeholder,
+input[type="tel"]::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder,
+input[type="url"]::-ms-input-placeholder,
+select::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #000;
+}
+
+input[type="date"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder,
+input[type="url"]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #000;
+}
+
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+section {
+  padding: calc($x / 16)rem 0;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  section {
+    padding: calc($x / 16)rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    padding: calc($x / 16)rem 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  section {
+    padding: calc($x / 16)rem 0;
+  }
+}
+
+body {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */
